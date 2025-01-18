@@ -64,13 +64,6 @@ tic-tac-toe/
 
 ---
 
-## Screenshots
-
-### Game Board
-![Tic-Tac-Toe Game Board](https://via.placeholder.com/800x400?text=Game+Board+Screenshot)
-
----
-
 ## Future Enhancements
 - Difficulty levels for the AI.
 - Multiplayer mode.
@@ -79,4 +72,4 @@ tic-tac-toe/
 ---
 
 ## Contact
-Created by [Your Name](https://github.com/your-username). Feel free to reach out!
+Created by [Robin Sharma](https://github.com/RobMinister). Feel free to reach out!
