@@ -1,0 +1,102 @@
+/* General Game Styling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Board Styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 15px 0;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ffffff, #eeeeee);
+  border: none;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.square:hover {
+  background: linear-gradient(135deg, #ddd, #fff);
+  transform: scale(1.1);
+}
+
+.square:active {
+  background: linear-gradient(135deg, #ccc, #eee);
+}
+
+/* "Play Again" Button Styling */
+.play-again {
+  margin-top: 20px;
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.play-again:hover {
+  background: linear-gradient(135deg, #e68900, #e64a19);
+  transform: scale(1.1);
+}
+
+.play-again:active {
+  background: linear-gradient(135deg, #d17c00, #d84315);
+  transform: scale(1);
+}
