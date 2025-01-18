@@ -82,7 +82,6 @@ function Game() {
         setBoard(newBoard);
         setIsPlayerTurn(false);
 
-        // Let the computer make its move
         setTimeout(() => {
             const winner = calculateWinner(newBoard);
             if (!winner && !isBoardFull(newBoard)) {
@@ -115,16 +114,20 @@ function Game() {
     );
 
     const winner = calculateWinner(board);
-    const status = winner
-        ? `Winner: ${winner}`
+    const statusMessage = winner
+        ? winner === 'X'
+            ? 'You Win!'
+            : 'Computer Wins. You Lose.'
         : isBoardFull(board)
         ? 'Draw!'
         : '';
 
+    const statusClass = winner === 'O' ? 'status status-lose' : 'status';
+
     return (
         <div className="game">
             <h1>Tic-Tac-Toe</h1>
-            {status && <div className="status">{status}</div>}
+            {statusMessage && <div className={statusClass}>{statusMessage}</div>}
             {renderBoard()}
             {(winner || isBoardFull(board)) && (
                 <button className="play-again" onClick={resetGame}>
